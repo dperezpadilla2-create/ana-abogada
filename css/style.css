@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #F9E7B4;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+}
+img{
+    max-width: 100%;
+}
+.logo-navbar{
+        width:150px;
+}
