@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
-/*General*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* GENERAL */
+
 *{
     margin: 0;
     padding: 0;
@@ -9,15 +11,372 @@
 html{
     font-size: 62.5%;
 }
+
 body{
-    background-color: #F9E7B4;
-    font-family: "Quicksand", sans-serif;
-    font-size: 1.8rem;
-    padding: 1.5rem;
+    background-color: #F5F2EF;
+    color: #111A26;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.6;
 }
+
+h1,
+h2,
+h3{
+    color: #111A26;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h3{
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+p{
+    margin-bottom: 1.5rem;
+}
+
+a{
+    color: #735646;
+    text-decoration: none;
+}
+
 img{
     max-width: 100%;
+    height: auto;
 }
+
+ul{
+    padding-left: 2rem;
+}
+
+/* NAVBAR */
+
+header{
+    background-color: #111A26;
+}
+
+.navbar{
+    min-height: 9rem;
+}
+
 .logo-navbar{
-        width:150px;
+    width: 20rem;
+}
+
+.nav-link{
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+}
+
+.nav-link.active{
+    color: #BFB1A4 !important;
+}
+
+.navbar-toggler{
+    border-color: #BFB1A4;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+
+/* HERO */
+
+.hero{
+    background-color: #BFB1A4;
+}
+
+.hero h2{
+    color: #735646;
+}
+
+.hero img{
+    border-radius: 0.8rem;
+}
+
+.hero .btn{
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+/* BOTONES */
+
+.btn{
+    border-radius: 0.4rem;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+}
+
+.btn-primary{
+    background-color: #111A26;
+    border-color: #111A26;
+}
+
+.btn-outline-primary{
+    border-color: #111A26;
+    color: #111A26;
+}
+
+/* SECCIONES */
+
+.presentacion-sobremi,
+.presentacion-servicios,
+.presentacion-proyectos,
+.presentacion-contacto{
+    background-color: #BFB1A4;
+}
+
+.servicios-destacados,
+.lista-servicios,
+.lista-proyectos,
+.formacion,
+.valores,
+.informacion-contacto{
+    background-color: #F5F2EF;
+}
+
+.porque-elegirme,
+.mision-vision{
+    background-color: #E5DDD6;
+}
+
+.servicios-destacados h2,
+.lista-servicios h2,
+.lista-proyectos h2,
+.testimonios h2{
+    text-align: center;
+}
+
+/* CARDS */
+
+.card{
+    background-color: white;
+    border: 1px solid #BFB1A4;
+    border-radius: 0.6rem;
+}
+
+.card-body{
+    padding: 2.5rem;
+}
+
+.card-title{
+    color: #735646;
+}
+
+/* POR QUÉ ELEGIRME */
+
+.porque-elegirme ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.porque-elegirme li{
+    border-bottom: 1px solid #BFB1A4;
+    padding: 1rem 0;
+}
+
+.porque-elegirme li::before{
+    content: "✓ ";
+    color: #735646;
+    font-weight: bold;
+}
+
+/* TESTIMONIOS */
+
+.testimonios{
+    background-color: #111A26;
+    color: white;
+}
+
+.testimonios h2,
+.testimonios h3{
+    color: white;
+}
+
+.testimonio{
+    background-color: #735646;
+    border-radius: 0.6rem;
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+.testimonio p{
+    color: white;
+    font-style: italic;
+}
+
+.carousel-indicators{
+    bottom: -4rem;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #BFB1A4;
+}
+
+/* CTA */
+
+.cta{
+    background-color: #735646;
+    color: white;
+    text-align: center;
+}
+
+.cta h2{
+    color: white;
+}
+
+.cta p{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70rem;
+}
+
+/* SOBRE MÍ */
+
+.presentacion-sobremi img{
+    border-radius: 0.8rem;
+}
+
+.formacion ul,
+.valores ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.formacion li,
+.valores li{
+    border-left: 4px solid #735646;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.mision-vision article{
+    padding: 2rem;
+}
+
+/* FORMULARIO */
+
+.form-label{
+    color: #111A26;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+.form-control,
+.form-select{
+    border: 1px solid #BFB1A4;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #111A26;
+    color: white;
+}
+
+footer h3{
+    color: #BFB1A4;
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer a{
+    color: white;
+}
+
+footer hr{
+    border-color: #BFB1A4;
+}
+
+/* PSEUDOCLASES */
+
+.nav-link:hover{
+    color: #BFB1A4;
+}
+
+.btn:hover{
+    background-color: #735646;
+    border-color: #735646;
+    color: white;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color: #735646;
+    box-shadow: 0 0 0 0.2rem rgba(115, 86, 70, 0.2);
+}
+
+footer a:hover{
+    color: #BFB1A4;
+}
+
+/* RESPONSIVE TABLET */
+
+@media (max-width: 991px){
+
+    .navbar-collapse{
+        padding: 2rem 0;
+    }
+
+    .nav-link{
+        margin-left: 0;
+    }
+}
+
+/* RESPONSIVE CELULAR */
+
+@media (max-width: 767px){
+
+    html{
+        font-size: 58%;
+    }
+
+    h1{
+        font-size: 3.8rem;
+    }
+
+    h2{
+        font-size: 2.7rem;
+    }
+
+    .hero img{
+        margin-top: 3rem;
+    }
+
+    .hero .btn{
+        display: block;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    footer section{
+        margin-bottom: 3rem;
+    }
 }
