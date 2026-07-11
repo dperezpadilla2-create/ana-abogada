@@ -1,0 +1,29 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// FOOTER
+
+footer{
+    @include colores-bloque($color-principal, $color-blanco);
+}
+
+footer h3{
+    color: $color-secundario;
+}
+
+footer ul{
+    @include lista-limpia;
+}
+
+footer a{
+    color: $color-blanco;
+}
+
+footer hr{
+    border-color: $color-secundario;
+}
+
+// PSEUDOCLASES
+footer a:hover{
+    color: $color-secundario;
+}

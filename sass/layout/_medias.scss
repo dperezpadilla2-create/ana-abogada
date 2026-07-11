@@ -1,0 +1,47 @@
+@use '../utilities/variables' as *;
+
+// MEDIAQUERIES
+
+// RESPONSIVE TABLET
+
+@media (max-width: 991px){
+
+    .navbar-collapse{
+        padding: $espacio-grande 0;
+    }
+
+    .nav-link{
+        margin-left: 0;
+    }
+}
+
+// RESPONSIVE CELULAR
+
+@media (max-width: 767px){
+
+    html{
+        font-size: 58%;
+    }
+
+    h1{
+        font-size: 3.8rem;
+    }
+
+    h2{
+        font-size: 2.7rem;
+    }
+
+    .hero img{
+        margin-top: 3rem;
+    }
+
+    .hero .btn{
+        display: block;
+        margin-bottom: $espacio-pequeno;
+        width: 100%;
+    }
+
+    footer section{
+        margin-bottom: 3rem;
+    }
+}

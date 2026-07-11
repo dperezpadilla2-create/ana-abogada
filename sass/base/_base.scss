@@ -1,0 +1,55 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+//BASE
+html{
+    font-size: 62.5%;
+}
+
+body{
+    @include colores-bloque($color-fondo, $color-principal);
+    font-family: $fuente-principal;
+    font-size: $texto-base;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3{
+    color: $color-principal;
+    font-family: $fuente-secundaria;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 4.5rem;
+    margin-bottom: $espacio-mediano;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: $espacio-grande;
+}
+
+h3{
+    font-size: 2.2rem;
+    margin-bottom: $espacio-mediano;
+}
+
+p{
+    margin-bottom: $espacio-mediano;
+}
+
+a{
+    color: $color-terciario;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul{
+    padding-left: $espacio-grande;
+}

@@ -1,0 +1,18 @@
+//MIXINS
+@mixin colores-bloque($fondo, $texto){
+    background-color: $fondo;
+    color: $texto;
+}
+
+@mixin lista-limpia{
+    list-style: none;
+    padding-left: 0;
+}
+
+@mixin imagen-redondeada($radio){
+    border-radius: $radio;
+}
+
+@mixin borde-color($grosor, $tipo, $color){
+    border: $grosor $tipo $color;
+}

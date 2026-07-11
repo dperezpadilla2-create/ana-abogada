@@ -1,0 +1,21 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// HERO
+
+.hero{
+    background-color: $color-secundario;
+}
+
+.hero h2{
+    color: $color-terciario;
+}
+
+.hero img{
+    @include imagen-redondeada($radio-grande);
+}
+
+.hero .btn{
+    margin-right: $espacio-pequeno;
+    margin-top: $espacio-pequeno;
+}
