@@ -3,19 +3,19 @@
 
 // HERO
 
-.hero{
+.hero {
     background-color: $color-secundario;
-}
 
-.hero h2{
-    color: $color-terciario;
-}
+    h2 {
+        color: $color-terciario;
+    }
 
-.hero img{
-    @include imagen-redondeada($radio-grande);
-}
+    img {
+        @include imagen-redondeada($radio-grande);
+    }
 
-.hero .btn{
-    margin-right: $espacio-pequeno;
-    margin-top: $espacio-pequeno;
+    .btn {
+        margin-right: $espacio-pequeno;
+        margin-top: $espacio-pequeno;
+    }
 }

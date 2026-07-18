@@ -6,7 +6,7 @@
 .presentacion-sobremi,
 .presentacion-servicios,
 .presentacion-proyectos,
-.presentacion-contacto{
+.presentacion-contacto {
     background-color: $color-secundario;
 }
 
@@ -15,106 +15,115 @@
 .lista-proyectos,
 .formacion,
 .valores,
-.informacion-contacto{
+.informacion-contacto {
     background-color: $color-fondo;
 }
 
 .porque-elegirme,
-.mision-vision{
+.mision-vision {
     background-color: $color-secundario;
 }
 
-.servicios-destacados h2,
-.lista-servicios h2,
-.lista-proyectos h2,
-.testimonios h2{
-    text-align: center;
+.servicios-destacados,
+.lista-servicios,
+.lista-proyectos,
+.testimonios {
+    h2 {
+        text-align: center;
+    }
 }
 
 // POR QUÉ ELEGIRME
 
-.porque-elegirme ul{
-    @include lista-limpia; 
-}
+.porque-elegirme {
+    ul {
+        @include lista-limpia;
+    }
 
-.porque-elegirme li{
-    border-bottom: 1px solid $color-secundario;
-    padding: $espacio-pequeno 0;
-}
+    li {
+        border-bottom: 1px solid $color-secundario;
+        padding: $espacio-pequeno 0;
 
-.porque-elegirme li::before{
-    content: "✓ ";
-    color: $color-terciario;
-    font-weight: bold;
+        &::before {
+            content: "✓ ";
+            color: $color-terciario;
+            font-weight: bold;
+        }
+    }
 }
 
 // TESTIMONIOS
 
-.testimonios{
+.testimonios {
     @include colores-bloque($color-principal, $color-blanco);
+
+    h2,
+    h3 {
+        color: $color-blanco;
+    }
 }
 
-.testimonios h2,
-.testimonios h3{
-    color: $color-blanco;
-}
-
-.testimonio{
+.testimonio {
     background-color: $color-terciario;
     border-radius: $radio-mediano;
     margin: 0 auto;
     max-width: 80rem;
     padding: 4rem;
     text-align: center;
+
+    p {
+        color: $color-blanco;
+        font-style: italic;
+    }
 }
 
-.testimonio p{
-    color: $color-blanco;
-    font-style: italic;
-}
-
-.carousel-indicators{
+.carousel-indicators {
     bottom: -4rem;
-}
 
-.carousel-indicators [data-bs-target]{
-    background-color: $color-secundario;
+    [data-bs-target] {
+        background-color: $color-secundario;
+    }
 }
 
 // CTA
 
-.cta{
+.cta {
     @include colores-bloque($color-terciario, $color-blanco);
-}
 
-.cta h2{
-    color: $color-blanco;
-}
+    h2 {
+        color: $color-blanco;
+    }
 
-.cta p{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70rem;
+    p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 70rem;
+    }
 }
 
 // SOBRE MÍ
 
-.presentacion-sobremi img{
-    @include imagen-redondeada($radio-grande);
+.presentacion-sobremi {
+    img {
+        @include imagen-redondeada($radio-grande);
+    }
 }
 
-.formacion ul,
-.valores ul{
-    @include lista-limpia;
+.formacion,
+.valores {
+    ul {
+        @include lista-limpia;
+    }
+
+    li {
+        border-left: 4px solid $color-terciario;
+        margin-bottom: $espacio-pequeno;
+        padding: $espacio-pequeno $espacio-mediano;
+    }
 }
 
-.formacion li,
-.valores li{
-    border-left: 4px solid $color-terciario;
-    margin-bottom: $espacio-pequeno;
-    padding: $espacio-pequeno $espacio-mediano;
-}
-
-.mision-vision article{
-    padding: $espacio-grande;
+.mision-vision {
+    article {
+        padding: $espacio-grande;
+    }
 }

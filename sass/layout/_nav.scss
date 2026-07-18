@@ -1,36 +1,36 @@
 @use '../utilities/variables' as *;
-
 // NAVBAR
 
-.navbar{
+.navbar {
     min-height: 9rem;
+
+    .navbar-toggler {
+        border-color: $color-secundario;
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
 }
 
-.logo-navbar{
+.logo-navbar {
     width: 20rem;
 }
 
-.nav-link{
-    color: $color-blanco;
-    font-family: $fuente-secundaria;
-    font-size: $texto-base;
-    margin-left: $espacio-mediano;
-}
+.navbar-nav {
+    .nav-link {
+        color: $color-blanco;
+        font-family: $fuente-secundaria;
+        font-size: $texto-base;
+        margin-left: $espacio-mediano;
 
-.navbar-nav .nav-link.active{
-    color: $color-secundario;
-}
+        &:hover,
+        &:focus {
+            color: $color-secundario;
+        }
 
-.navbar-toggler{
-    border-color: $color-secundario;
-}
-
-.navbar-toggler-icon{
-    filter: invert(1);
-}
-
-// PSEUDOCLASES
-
-.nav-link:hover{
-    color: $color-secundario;
+        &.active {
+            color: $color-secundario;
+        }
+    }
 }

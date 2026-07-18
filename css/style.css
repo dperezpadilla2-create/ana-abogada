@@ -66,46 +66,39 @@ header {
 .navbar {
   min-height: 9rem;
 }
+.navbar .navbar-toggler {
+  border-color: #BFB1A4;
+}
+.navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
 
 .logo-navbar {
   width: 20rem;
 }
 
-.nav-link {
+.navbar-nav .nav-link {
   color: #FFFFFF;
   font-family: "Lato", sans-serif;
   font-size: 1.7rem;
   margin-left: 1.5rem;
 }
-
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
   color: #BFB1A4;
 }
-
-.navbar-toggler {
-  border-color: #BFB1A4;
-}
-
-.navbar-toggler-icon {
-  filter: invert(1);
-}
-
-.nav-link:hover {
+.navbar-nav .nav-link.active {
   color: #BFB1A4;
 }
 
 .hero {
   background-color: #BFB1A4;
 }
-
 .hero h2 {
   color: #735646;
 }
-
 .hero img {
   border-radius: 0.8rem;
 }
-
 .hero .btn {
   margin-right: 1rem;
   margin-top: 1rem;
@@ -143,12 +136,10 @@ header {
   list-style: none;
   padding-left: 0;
 }
-
 .porque-elegirme li {
   border-bottom: 1px solid #BFB1A4;
   padding: 1rem 0;
 }
-
 .porque-elegirme li::before {
   content: "✓ ";
   color: #735646;
@@ -159,7 +150,6 @@ header {
   background-color: #111A26;
   color: #FFFFFF;
 }
-
 .testimonios h2,
 .testimonios h3 {
   color: #FFFFFF;
@@ -173,7 +163,6 @@ header {
   padding: 4rem;
   text-align: center;
 }
-
 .testimonio p {
   color: #FFFFFF;
   font-style: italic;
@@ -182,7 +171,6 @@ header {
 .carousel-indicators {
   bottom: -4rem;
 }
-
 .carousel-indicators [data-bs-target] {
   background-color: #BFB1A4;
 }
@@ -191,11 +179,9 @@ header {
   background-color: #735646;
   color: #FFFFFF;
 }
-
 .cta h2 {
   color: #FFFFFF;
 }
-
 .cta p {
   margin-left: auto;
   margin-right: auto;
@@ -211,7 +197,6 @@ header {
   list-style: none;
   padding-left: 0;
 }
-
 .formacion li,
 .valores li {
   border-left: 4px solid #735646;
@@ -227,25 +212,17 @@ footer {
   background-color: #111A26;
   color: #FFFFFF;
 }
-
 footer h3 {
   color: #BFB1A4;
 }
-
 footer ul {
   list-style: none;
   padding-left: 0;
 }
-
-footer a {
+footer ul a {
   color: #FFFFFF;
 }
-
-footer hr {
-  border-color: #BFB1A4;
-}
-
-footer a:hover {
+footer ul a:hover {
   color: #BFB1A4;
 }
 
