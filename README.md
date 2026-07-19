@@ -5,7 +5,7 @@ Proyecto desarrollado para el curso de Desarrollo Web.
 ## Tecnologías utilizadas
 
 - HTML5
-- CSS3
+- CSS
 - Bootstrap 5
 - Sass (SCSS)
 - Git y GitHub
