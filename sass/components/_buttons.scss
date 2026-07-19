@@ -3,26 +3,26 @@
 
 // BOTONES
 
-.btn{
+.btn {
     border-radius: $radio-pequeno;
     font-family: $fuente-secundaria;
     font-size: $texto-secundario;
     padding: $espacio-pequeno $espacio-grande;
+    transition: all 0.3s;
+
+    &:hover {
+        @include colores-bloque($color-terciario, $color-blanco);
+        border-color: $color-terciario;
+        transform: translateY(-3px);
+    }
 }
 
-.btn-primary{
-    background-color:$color-principal;
+.btn-primary {
+    background-color: $color-principal;
     border-color: $color-principal;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
     border-color: $color-principal;
     color: $color-principal;
-}
-
-// PSEUDOCLASES
-
-.btn:hover{
-    @include colores-bloque($color-terciario, $color-blanco);
-    border-color: $color-terciario;
 }

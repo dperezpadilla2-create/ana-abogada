@@ -1,4 +1,6 @@
 @use '../utilities/variables' as *;
+
+
 // NAVBAR
 
 .navbar {
@@ -15,6 +17,12 @@
 
 .logo-navbar {
     width: 20rem;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-5px) scale(1.03);
+    }
+    animation: aparecer 1s ease-out;
 }
 
 .navbar-nav {

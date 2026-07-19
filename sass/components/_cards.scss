@@ -3,22 +3,21 @@
 
 // CARDS
 
-.card{
+.card {
     background-color: $color-blanco;
     @include borde-color(1px, solid, $color-secundario);
     border-radius: $radio-mediano;
-}
-
-.card-body{
-    padding: 2.5rem;
-}
-
-.card-title{
-    color: $color-terciario;
-}
-
-// PSEUDOCLASES
-.card:hover{
-    transform: translateY(-5px);
     transition: 0.3s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-body {
+        padding: 2.5rem;
+    }
+
+    .card-title {
+        color: $color-terciario;
+    }
 }

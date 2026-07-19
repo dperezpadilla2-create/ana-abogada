@@ -3,23 +3,20 @@
 
 // FORMULARIO DE CONTACTO
 
-.form-label{
+.form-label {
     color: $color-principal;
     font-family: $fuente-secundaria;
     font-weight: 700;
 }
 
 .form-control,
-.form-select{
+.form-select {
     @include borde-color(1px, solid, $color-secundario);
     font-size: $texto-secundario;
     padding: $espacio-pequeno;
-}
 
-// PSEUDOCLASES
-
-.form-control:focus,
-.form-select:focus{
-    border-color: $color-terciario;
-    box-shadow: 0 0 0 0.2rem rgba($color-terciario, 0.2);
+    &:focus {
+        border-color: $color-terciario;
+        box-shadow: 0 0 0 0.2rem rgba($color-terciario, 0.2);
+    }
 }

@@ -75,6 +75,13 @@ header {
 
 .logo-navbar {
   width: 20rem;
+  transition: transform 0.3s;
+}
+.logo-navbar:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+.logo-navbar {
+  animation: aparecer 1s ease-out;
 }
 
 .navbar-nav .nav-link {
@@ -260,19 +267,16 @@ footer ul a:hover {
   background-color: #FFFFFF;
   border: 1px solid #BFB1A4;
   border-radius: 0.6rem;
+  transition: 0.3s;
 }
-
-.card-body {
-  padding: 2.5rem;
-}
-
-.card-title {
-  color: #735646;
-}
-
 .card:hover {
   transform: translateY(-5px);
-  transition: 0.3s;
+}
+.card .card-body {
+  padding: 2.5rem;
+}
+.card .card-title {
+  color: #735646;
 }
 
 .form-label {
@@ -287,7 +291,6 @@ footer ul a:hover {
   font-size: 1.6rem;
   padding: 1rem;
 }
-
 .form-control:focus,
 .form-select:focus {
   border-color: #735646;
@@ -299,6 +302,13 @@ footer ul a:hover {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   padding: 1rem 2rem;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: #735646;
+  color: #FFFFFF;
+  border-color: #735646;
+  transform: translateY(-3px);
 }
 
 .btn-primary {
@@ -309,12 +319,6 @@ footer ul a:hover {
 .btn-outline-primary {
   border-color: #111A26;
   color: #111A26;
-}
-
-.btn:hover {
-  background-color: #735646;
-  color: #FFFFFF;
-  border-color: #735646;
 }
 
 /*# sourceMappingURL=style.css.map */
