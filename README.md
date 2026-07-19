@@ -1,24 +1,24 @@
-# Ana María Vela - Abogada Laboral
+# Ana María Vela Ballén - Abogada Laboral
 
-Proyecto desarrollado como práctica de HTML, CSS, Bootstrap y Sass.
+Proyecto desarrollado para el curso de Desarrollo Web.
 
-## Tecnologías
+## Tecnologías utilizadas
 
 - HTML5
 - CSS3
 - Bootstrap 5
-- Sass
+- Sass (SCSS)
 - Git y GitHub
+- AOS
 
-## Sass
+## Características
 
-En este proyecto utilicé:
+- Diseño responsive.
+- Uso de Bootstrap.
+- Organización de estilos con Sass.
+- Variables, mixins, nesting y `@extend`.
+- Animaciones CSS y AOS.
 
-- Variables.
-- Mixins.
-- Partials.
-- `@use` para organizar los estilos.
+## Autora
 
-## Repositorio
-
-https://github.com/dperezpadilla2-create/ana-abogada
+Daniela Pérez Padilla
